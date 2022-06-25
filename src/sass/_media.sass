@@ -156,19 +156,6 @@
 	.promo
 		&_header
 			line-height: 45px		
-	.footer
-		&_wrapper
-			flex-wrap: wrap
-		&_wrapper > div 
-			width: 100%
-			display: flex 
-			justify-content: center
-			margin-bottom: 20px
-			&:nth-child(1)
-				width: 100%
-			&:nth-child(3)
-				width: 100%
-				justify-content: center
 		
 @media (max-width: 575px)	
 	nav
@@ -193,6 +180,8 @@
 			height: 22px
 			font-size: 10px
 			margin-top: 6px
+			&:hover
+				background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
 	.promo
 		min-height: 400px
 		padding: 93px 0 35px 0
@@ -211,8 +200,16 @@
 			width: 210px
 			height: 50px
 			margin-top: 72px
+			&:hover
+				background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
 	.menu
 		width: 85%
+		&_item
+			width: 100%
+			text-align: center
+			padding: 5px 0
+		&_link
+			display: block
 	.reasons
 		padding: 22px 0 36px 0
 		&_block
